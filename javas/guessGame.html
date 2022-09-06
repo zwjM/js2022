@@ -78,7 +78,7 @@
             if(userGuess<randomNumber){
                 lowOrHi.textContent = '你猜低了';
             }else if(userGuess>randomNumber){
-                lowOrHi.textContent = '你猜高了';
+                lowOrHi.textContent = '你猜高了!';
             }
         }
         guessCount++;
@@ -110,6 +110,8 @@
             guessSubmit.disabled = false;
             guessField.value = '';
             guessField.focus();
+
+
 
             lastResult.style.backgroundColor = 'white';
 
